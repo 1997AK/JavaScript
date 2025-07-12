@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var x // 定义变量不赋值
+        x = 100
+
+        var y = x + 1000 // 定义变量赋值
+
+        var z, v, m // 定义多个变量不赋值
+        var a = 1, b = 2, c = 3; // 定义多个变量赋值
+        console.log("x:", x)
+        console.log("y:", y)
+        console.log("z:", z)
+        console.log("v:", v)
+        console.log("m:", m)
+        console.log("a:", a)
+        console.log("b:", b)
+        console.log("c:", c)
+
+        // 变量的命名规则和命名规范
+        /*
+            一、规则（必须遵守）
+                这些是编程语言强制要求的规则，违反会导致语法错误：
+                允许的字符：
+                    字母（a-z, A-Z）、数字（0-9）、下划线（_）、美元符号（$）。
+                    不能以数字开头（如 1name 错误，name1 正确）。
+                区分大小写：
+                    name 和 Name 是两个不同的变量（大多数语言中）。
+                避免关键字/保留字：
+                    不能用语言的关键字命名（如 if, for, class 等）。
+                无空格或特殊符号：
+                    不能包含空格或 @, #, ! 等（下划线 _ 通常允许）。
+        */
+
+        /*
+            二、规范：建议遵守的，不遵守不会报错
+                1. 变量名尽量有意义（语义化）
+                2. 遵守驼峰命名规则、由多个单词组成的时候，从第二个单词开始首字母大写
+                3. 不要使用中文
+        */
+    </script>
+</body>
+
+</html>
