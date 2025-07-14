@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型转换</title>
+</head>
+<body>
+    <script>
+        /**
+         * Number()
+         * 可以把一个变量强制转换为数值类型
+         * 可以转换小数，会保留小数
+         * 可以转换布尔值
+         * 遇到不可转换的会返回NaN
+        */
+            // 1. string类型转换为number类型
+            // var a = "100"
+            // var b = Number(a)
+            // console.log(typeof a, a) // string  "100"
+            // console.log(typeof b, b) // number  100
+
+            // var a = "abc"
+            // var b = Number(a)
+            // console.log(typeof a, a) // string  "abc"
+            // console.log(typeof b, b) // number  NaN
+
+
+
+            // 2. boolean类型转换为number类型
+            // var a = true
+            // var b = Number(a)
+            // console.log(typeof a, a) // boolean  true
+            // console.log(typeof b, b) // number   1
+
+            // var a = false
+            // var b = Number(a)
+            // console.log(typeof a, a) // boolean  false
+            // console.log(typeof b, b) // number   0
+
+
+            // 3. null类型转换为number类型
+            // var a = null
+            // var b = Number(a)
+            // console.log(typeof a, a) // object  null
+            // console.log(typeof b, b) // number  0
+
+
+            // 4. undefind类型转换为number
+            // var a = undefined
+            // var b = Number(a)
+            // console.log(typeof a, a) // undefined  undefind
+            // console.log(typeof b, b) // number     NaN
+
+        /**
+         * parseInt()
+         * 从第一位开始检查，是数字就转换，直到一个不是数字的内容
+         * 开头就不是数字，那么直接返回NaN
+         * 不认识小数点，只能保留整数
+        */
+            // var a = "123abc"
+            // var b = parseInt(a)
+            // console.log(typeof a, a) // string     "123zbc"
+            // console.log(typeof b, b) // number     123
+
+            // var a = "12.3333"
+            // var b = parseInt(a)
+            // console.log(typeof a, a) // string     "12.3333"
+            // console.log(typeof b, b) // number     12
+
+        /**
+         * parseFloat()
+         * 从第一位开始检查，是数字就转换，直到一个不是数字的内容
+         * 开头就不是数字，那么直接返回NaN
+         * 认识一次小数点
+        */
+            // var a = "12aaa"
+            // var b = parseFloat(a)
+            // console.log(typeof a, a) // string     "12aaa"
+            // console.log(typeof b, b) // number     12
+
+            // var a = "12.6666"
+            // var b = parseFloat(a)
+            // console.log(typeof a, a) // string     "12.6666"
+            // console.log(typeof b, b) // number     12.6666
+
+
+        /**
+         * 非加号
+        */
+            // var a = "0"
+            // var b = a - 0
+            // console.log(typeof a, a) // string     "0"
+            // console.log(typeof b, b) // number     0
+
+            // var a = "2"
+            // var b = a * 1
+            // console.log(typeof a, a) // string     "2"
+            // console.log(typeof b, b) // number     2
+
+            // var a = "2"
+            // var b = a / 2
+            // console.log(typeof a, a) // string     "2"
+            // console.log(typeof b, b) // number     1
+    </script>
+</body>
+</html>
