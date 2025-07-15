@@ -6,6 +6,59 @@
     <title>数据类型转换</title>
 </head>
 <body>
-    
+    <script>
+        /**
+         * 1. String(变量)
+         * 所有类型都能转换成字符串
+        */
+        // var a = 100
+        // var b = String(a)
+        // console.log(typeof a, a) // number 100
+        // console.log(typeof b, b) // string "100"
+
+        // var a = false
+        // var b = String(a)
+        // console.log(typeof a, a) // boolean true
+        // console.log(typeof b, b) // string "true"
+
+
+
+        /**
+         * 2. 变量.toString()
+         * 有一些数据类型不能使用toString()，null/undefind不可转换
+        */
+        // var a = 100
+        // var b = a.toString()
+        // console.log(typeof a, a) // number 100
+        // console.log(typeof b, b) // string "100"
+
+        // var a = true
+        // var b = a.toString()
+        // console.log(typeof a, a) // boolean true
+        // console.log(typeof b, b) // string "true"
+
+        // var a = undefined
+        // var b = a.toString() // 报错，下面不执行
+        // console.log(typeof a, a)
+        // console.log(typeof b, b)
+
+
+
+        /**
+         * 3. +(加号)
+         * 字符串拼接，只要+任意一边是字符串，就会进行字符串拼接
+        */
+        // var a = 100
+        // var b = a + ''
+        // console.log(typeof a, a) // number 100
+        // console.log(typeof b, b) // string "100"
+
+        // var a = true
+        // var b = a + ''
+        // console.log(typeof a, a) // boolean true
+        // console.log(typeof b, b) // string "true"
+        
+        
+    </script>
 </body>
 </html>
