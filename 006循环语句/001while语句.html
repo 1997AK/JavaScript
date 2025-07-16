@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+</head>
+<body>
+    <script>
+        /**
+         * while循环
+         * while，中文叫当...时，其实就是当条件满足时就执行代码，一旦不满足就不执行了
+         * 语法：while (条件) { 条件满足时执行的代码 }
+         * 因为满足条件就执行，所以我们写的时候一定要注意，就是设定一个边界值，不然就一直循环下去了
+        */
+
+        // var num = 0;
+        // while (num < 10) {
+        //     console.log('当前num是' + num);
+        //     num++
+        // }
+
+        // 求1-100的和
+        var num = 0;
+        var a = 0;
+        while (a <= 100) {
+            num += a
+            if (a === 100) {
+                document.write("1-100的和是", num)
+            }
+            a++
+        }
+        document.write("================")
+
+        // 求一个数字的阶乘 例：5  5*4*3*2*1
+        var b = 6;
+        var c = 1;
+        
+        while (b > 0) {
+            c *= b
+            if (b === 1) {
+                document.write("6的阶乘是", c)
+            }
+            b--
+        }
+
+    </script>
+</body>
+</html>
