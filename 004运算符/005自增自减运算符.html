@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自增自减运算符</title>
+</head>
+<body>
+    <script>
+        /**
+         * ++
+         * 进行自增运算
+         * 分为两种，++变量 和 变量++
+         * 前置++，会先把值自动+1，再返回
+         * var a = 10;
+         * console.log(++a); // 11  会返回11，并且把a的值变成11
+         * 
+         * 后置++，会先把值返回，再自动+1
+         * var a = 10;
+         * console.log(a++); // 10  会返回10，然后把a的值变成11
+         * console.log(a);   // 11
+         * 
+         * var a = 10;
+         * var res = ++a + a++ + ++a
+         * console.log(a, res) // 13 35
+         * ++a 返回 11
+         * a++ 返回 11 但a的值已经是12
+         * ++a 返回 13
+        */
+
+
+        /**
+         * --
+         * 进行自减运算
+         * 分为两种，--变量 和 变量--
+         * 前置--，会先把值自动-1，在返回
+         * var a = 10;
+         * console.log(--a) // 10    会返回9，并且把a的值变成9
+         * 
+         * 后置--，会先把值返回，再自动-1
+         * var a = 10;
+         * console.log(a--); // 10  会返回10，然后把a的值变成9
+         * console.log(a);   // 9
+         * 
+         * var a = 10;
+         * var res = --a + a-- + --a
+         * console.log(a, res) // 7 25
+         * --a 返回 9
+         * a-- 返回 9 但a的值已经是8
+         * --a 返回 7
+        */
+
+        var a = 10;
+        var res = a++ + --a + a-- + ++a
+        // 10 10 10 10
+        console.log(a, res) // 10 40
+        
+        
+    </script>
+</body>
+</html>
