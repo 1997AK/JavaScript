@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <script>
+        /**
+         * switch
+         * 条件判断语句的一种
+         * 是对于某一个变量的判断
+         * 语法：
+         *      switch (要判断的变量) {
+         *          case 情况1:
+         *              情况1要执行的代码
+         *              break;
+         *          case 情况2:
+         *              情况2要执行的代码
+         *              break;
+         *          default:
+         *              上述情况都不满足的时候执行的代码
+         *      }
+        */
+
+
+        var a = "666"
+        switch (typeof a) {
+            case "string":
+                document.write(a, "类型是string")
+                break;
+            case "number":
+                document.write(a, "类型是number")
+                break;
+            case "boolean":
+                document.write(a, "类型是boolean")
+                break;
+            case "undefined":
+                document.write(a, "类型是undefined")
+                break;
+            case "bigint":
+                document.write(a, "类型是bigInt")
+                break;
+            default:
+                document.write(a, "类型是object")
+        }
+    </script>
+</body>
+</html>
