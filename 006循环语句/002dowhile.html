@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do while</title>
+</head>
+<body>
+    <script>
+        /**
+         * do {} while()
+         * 不管条件如何先执行一回，然后再开始进行条件判断
+         * 语法：do { 要执行的代码 } while(条件)
+        */
+        // var num = 10;
+        // do {
+        //     console.log(`我要执行${num}次`)
+        //     num--
+        // } while(num > 10)
+
+
+        // var n = 1;
+        // var sum = 0;
+
+        // do {
+        //     sum += n
+        //     n++
+        // } while(n <= 100)
+        // console.log(sum)
+
+
+        var name = ""
+        do {
+            name = prompt("请输入你的名字")
+        } while(!name)
+        document.write("你的名字是：", name)
+    </script>
+</body>
+</html>
