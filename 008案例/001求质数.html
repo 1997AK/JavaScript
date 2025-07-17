@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求质数</title>
+</head>
+<body>
+    <script>
+        /**
+         * 质数：除了 1 和自己本身以外，没有其他的约数
+         * 
+         * 除了1和自身 取余其他数都不为0就是质数
+        */
+
+        // var n = 9
+        // var isZhishu = true
+
+        // for (var i = 2; i < n; i++) {
+        //     if (n % i === 0) {
+        //         isZhishu = false
+        //     }
+        // }
+        // if (isZhishu) {
+        //     document.writeln(n, '是质数')
+        // } else {
+        //     document.writeln(n, '不是质数')
+        // }
+
+
+        var n = 7
+        for (var i = 2; i < n; i++) {
+            if (n % i === 0) {
+                break
+            }
+        }
+        if (i === n) {
+            document.writeln(n, '是质数')
+        } else {
+            document.writeln(n, '不是质数')
+        }
+    </script>
+</body>
+</html>
